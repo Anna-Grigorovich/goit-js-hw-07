@@ -26,7 +26,8 @@ function createMarkup(gallery) {
 
 galleryContainer.innerHTML = markupGallery;
 
-const lightbox = new SimpleLightbox('.gallery a', {
+const lightbox = new SimpleLightbox('.gallery li a', {
   captions: true,
   captionDelay: 250,
+  captionsData: 'alt',
 });
